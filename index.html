@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<meta name="description" content="Larissa Milchakova · CV">
+<title>Larissa Milchakova · CV</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%231F3B57'/%3E%3Ctext x='16' y='21.5' font-family='Arial' font-size='14' font-weight='700' fill='white' text-anchor='middle'%3ELM%3C/text%3E%3C/svg%3E">
+<style>
+:root{--ink:#1d2733;--muted:#5b6672;--accent:#1F3B57;--accent-2:#2f5a82;--line:#d8dee4;--bg:#f4f6f8;--paper:#fff;
+--bar-h:3.5rem;color-scheme:light}
+*{box-sizing:border-box}
+html{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;scroll-padding-block-start:var(--bar-h);-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1rem/1.6 system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif}
+a{color:var(--accent-2);text-underline-offset:.15em;text-decoration-thickness:from-font}
+.bar{position:sticky;top:0;z-index:10;background:rgba(255,255,255,.94);backdrop-filter:saturate(1.4) blur(8px);-webkit-backdrop-filter:saturate(1.4) blur(8px);border-bottom:1px solid var(--line)}
+.bar-in{max-width:52rem;margin:0 auto;min-height:var(--bar-h);display:flex;align-items:center;justify-content:space-between;gap:.75rem;padding:.5rem 1rem}
+.langs-switch{display:flex;gap:.25rem;padding:.2rem;background:#eef1f4;border-radius:.6rem}
+.langs-switch button{appearance:none;border:0;background:transparent;font:600 .875rem/1 inherit;font-family:inherit;color:var(--muted);min-width:2.9rem;min-height:2.75rem;padding:0 .7rem;border-radius:.45rem;cursor:pointer;letter-spacing:.04em}
+.langs-switch button[aria-pressed="true"]{background:#fff;color:var(--accent);box-shadow:0 1px 2px rgba(16,32,48,.15)}
+.langs-switch button:focus-visible,.btn:focus-visible{outline:2px solid var(--accent-2);outline-offset:2px}
+.btn{display:inline-flex;align-items:center;gap:.45rem;min-height:2.75rem;padding:0 1rem;border-radius:.6rem;background:var(--accent);color:#fff;font-weight:600;font-size:.9rem;text-decoration:none;white-space:nowrap}
+.btn:hover{background:#13293F}
+.btn svg{width:1.05rem;height:1.05rem;flex:none}
+main{max-width:52rem;margin:1.5rem auto 3rem;padding:0 1rem}
+.cv{background:var(--paper);border-radius:1rem;box-shadow:0 1px 3px rgba(16,32,48,.08),0 8px 24px rgba(16,32,48,.05);padding:2.75rem 3rem}
+.head{padding-bottom:1.5rem;border-bottom:2px solid var(--accent)}
+h1{margin:0;font-size:2.25rem;line-height:1.15;letter-spacing:-.02em;color:#13293F;text-wrap:balance}
+.role{margin:.5rem 0 .9rem;font-size:1.125rem;line-height:1.4;font-weight:600;color:var(--accent);text-wrap:balance}
+.contacts,.status{margin:0;font-size:.95rem;color:var(--muted)}
+.contacts a{color:var(--ink);text-decoration:none;white-space:nowrap}
+.contacts a:hover{text-decoration:underline}
+.sep{margin:0 .3rem;color:#b6c0ca}
+section{margin-top:2rem}
+h2{margin:0 0 .9rem;padding-bottom:.4rem;border-bottom:1px solid var(--line);font-size:.8rem;line-height:1.3;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--accent)}
+h3{margin:0;font-size:1.05rem;line-height:1.35;color:#13293F}
+h4{margin:1rem 0 .35rem;font-size:.85rem;line-height:1.3;color:var(--accent);letter-spacing:.02em}
+p{margin:0}
+.lead{max-width:70ch;text-wrap:pretty}
+.skills{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1.25rem 2.5rem}
+.skills h3{font-size:.95rem;margin-bottom:.4rem;color:var(--accent)}
+.list{list-style:none;margin:.4rem 0 0;padding:0}
+.list li{position:relative;padding-inline-start:1.1rem;margin:.35rem 0;text-wrap:pretty;max-width:72ch}
+.list li::before{content:"–";position:absolute;inset-inline-start:0;color:#8a96a3}
+.job{margin-top:1.75rem}
+.job:first-of-type{margin-top:.25rem}
+.job-top{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:.15rem 1.25rem}
+.job-top h3{flex:1 1 20rem;min-width:0}
+.dates{font-size:.875rem;color:var(--muted);font-weight:600;white-space:nowrap}
+.company{margin-top:.15rem;font-style:italic;color:var(--accent-2);font-size:.95rem}
+.note,.place{color:var(--muted)}
+.intro{margin-top:.7rem;max-width:72ch;text-wrap:pretty}
+.early li{color:var(--ink)}
+.langs{list-style:none;margin:0;padding:0}
+.langs li{margin:.3rem 0}
+.langs strong{color:#13293F}
+.dl-bottom{margin-top:2.25rem;padding-top:1.5rem;border-top:1px solid var(--line)}
+@media (max-width:40rem){
+ main{margin:0 auto 2rem;padding:0}
+ .cv{border-radius:0;box-shadow:none;padding:1.5rem 1.1rem 2rem}
+ h1{font-size:1.75rem}
+ .role{font-size:1rem}
+ .skills{grid-template-columns:minmax(0,1fr);gap:1rem}
+ .contacts a{display:block;width:fit-content}
+ .contacts .sep{display:none}
+ .bar-in{padding:.4rem .75rem}
+ .dates{white-space:normal}
+}
+@media (max-width:22rem){.langs-switch button{min-width:2.6rem;padding:0 .5rem}}
+@media print{
+ .bar,.dl-bottom{display:none}
+ body{background:#fff}
+ main{margin:0;max-width:none;padding:0}
+ .cv{box-shadow:none;padding:0}
+ .job{break-inside:avoid-page}
+}
+</style>
+</head>
+<body>
+<div class="bar"><div class="bar-in">
+<div class="langs-switch" role="group" aria-label="Language"><button type="button" data-lang="ru" aria-pressed="false" lang="ru" title="Русский">RU</button><button type="button" data-lang="en" aria-pressed="false" lang="en" title="English">EN</button><button type="button" data-lang="el" aria-pressed="false" lang="el" title="Ελληνικά">EL</button></div>
+<a class="btn" id="dl-top" href="files/Milchakova_Larissa_CV_EN.docx" download><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M5 21h14"/></svg><span class="long">Download Word</span></a>
+</div></div>
+<main>
+<article class="cv" lang="ru" data-lang="ru" hidden>
+<header class="head"><h1>Мильчакова Лариса</h1><p class="role">Руководитель в сфере сервиса и туризма · команда, качество обслуживания, P&amp;L</p>
+<p class="contacts"><a href="tel:+77472585895">+7 (747) 258-58-95</a> <span class="sep" aria-hidden="true">·</span> <a href="mailto:larissa.milchakova@gmail.com">larissa.milchakova@gmail.com</a></p>
+<p class="status">Гражданство Республика Казахстан · Готова к переезду</p></header>
+<section><h2>Профессиональный профиль</h2><p class="lead">13,5 лет в туризме и клиентском сервисе, из них 6,8 лет на руководящих позициях. Руководила подразделением с оборотом $510 тыс. в год и командой до 15 человек в двух городах, отвечала перед собственниками за P&amp;L и бюджет. Приняла отдел в кризисе и за полгода наладила работу: жалобы клиентов сократились с 3–4 в неделю до 1–2 за полугодие, благодарности выросли с одной в год до 1–3 в месяц. По итогам 2024 года перевыполнила план по EBITDA на 21%. Начинала официанткой в кафе, затем работала в туризме и люкс-ритейле: VIP-клиенты, касса, учёт товара.</p></section>
+<section><h2>Ключевые компетенции</h2><div class="skills">
+<div><h3>Управление и финансы</h3><ul class="list"><li>P&amp;L, бюджет, отчётность перед собственниками</li><li>Контроль расходов и фонда оплаты труда, ценообразование</li><li>Стандарты обслуживания, регламенты, должностные инструкции</li><li>KPI, мотивация, графики нагрузки сотрудников</li><li>Подбор, обучение и переобучение персонала</li><li>Антикризисное управление, запуск новых направлений с нуля</li></ul></div>
+<div><h3>Сервис и работа с гостями</h3><ul class="list"><li>Оценка качества обслуживания клиентами, работа с жалобами</li><li>Сложные и конфликтные ситуации, урегулирование споров</li><li>VIP- и корпоративные клиенты, люкс-сегмент</li><li>Касса, кассовая дисциплина, учёт товара, инвентаризации</li><li>Работа с поставщиками и партнёрами</li><li>Визовые и миграционные вопросы, в том числе для иностранцев</li></ul></div>
+</div></section>
+<section><h2>Опыт работы</h2>
+<div class="job"><div class="job-top"><h3>Руководитель визового подразделения</h3><p class="dates">март 2023 — сентябрь 2025 (2 года 7 месяцев)</p></div>
+<p class="company">Fun&amp;Sun (ТОО Itour) / KazTour (ТОО Казтур) <span class="place">· г. Алматы/г. Астана</span></p>
+<p class="intro">Приняла визовый отдел туроператора Fun&amp;Sun в кризисе: 15 человек в Алматы и Астане, нет выстроенных процессов, массовые жалобы партнёров, отказы из-за ошибок в документах, судебные споры с клиентами. Работала без оперативного вмешательства руководства, отчитывалась собственникам по результатам, P&amp;L и бюджету.</p>
+<h4>Что сделала</h4>
+<ul class="list"><li>Провела аудит, перестроила отдел и сократила штат с 15 до 11 человек без потери качества.</li><li>Внедрила с нуля должностные инструкции, регламенты и стандарты обслуживания, KPI, мотивацию и грейдинг; ввела графики для равномерной нагрузки на сотрудников.</li><li>Организовала регулярное обучение команды: сложные случаи, деловая коммуникация, работа с возражениями и ожиданиями клиентов.</li><li>Ввела оценку качества обслуживания клиентами и привязала её к KPI сотрудников; пересобрала ежемесячную отчётность по услугам и доходам.</li><li>Предложила, защитила перед руководством и запустила с нуля новое направление KazTour Visa для корпоративных и частных клиентов; заключила сделки с новыми корпоративными клиентами и выстроила поток частных клиентов без дополнительных затрат на маркетинг.</li><li>Ввела дифференцированное ценообразование и дополнительные услуги.</li></ul>
+<h4>Результаты</h4>
+<ul class="list"><li>Через полгода отдел работал без сбоев и слаженно взаимодействовал со смежными отделами и клиентами.</li><li>Жалобы клиентов: с 3–4 в неделю до 1–2 за полугодие. Судебные споры: ноль. Официальные благодарности: с одной в год до 1–3 в месяц.</li><li>Оценка качества обслуживания по подразделению 93–98% при пороге KPI 85%.</li><li>2024 год: план по EBITDA перевыполнен на 21% ($98,7 тыс. чистой прибыли при обороте $510 тыс.), выручка выше плана, накладные расходы на 8,3% ниже бюджета.</li><li>Когда визовый рынок туроператора сократился и маржа основного направления упала на 31%, компенсировала потери новым направлением: его продажи выросли на 114%, валовая маржа на 150% год к году. Доля нового направления в марже подразделения выросла с 8% до 22%, чистая прибыль осталась в пределах 8% от плана, фонд оплаты труда на 12% ниже плана.</li><li>Новое направление выросло с 1 до 4 сотрудников за счёт переобучения своей команды, без затрат на подбор.</li><li>За сотрудничество с Посольством Греции отдел два года подряд приглашали на EUROFEST 2024/2025 при Европейской торговой палате в РК.</li></ul>
+</div>
+<div class="job"><div class="job-top"><h3>Супервайзер визово-миграционного отдела</h3><p class="dates">март 2019 — март 2023 (4 года 1 месяц)</p></div>
+<p class="company">ТОО Интэрнэшнл Трэвэл плюс <span class="note">(официальный представитель BCD Travel в Казахстане)</span> <span class="place">· г. Алматы</span></p>
+<ul class="list"><li>Руководила отделом из 4 человек и координировала менеджеров филиалов в других регионах; отвечала за подбор и обучение персонала.</li><li>Формировала бюджет, контролировала расходы, готовила отчётность для руководства и бухгалтерии.</li><li>Вела корпоративных клиентов, среди них McKinsey &amp; Company, KPMG, Siemens Energy, Nestle, Mars, Danone, Sanofi, Louis Vuitton.</li><li>Работала с поставщиками услуг, госорганами и представительствами; участвовала в решении нестандартных случаев, споров и конфликтов.</li></ul>
+</div>
+<div class="job"><div class="job-top"><h3>Менеджер по визам → Старший менеджер по визам</h3><p class="dates">июль 2015 — март 2019 (3 года 9 месяцев)</p></div>
+<p class="company">ТОО Интэрнэшнл Трэвэл плюс <span class="note">(официальный представитель BCD Travel в Казахстане)</span> <span class="place">· г. Алматы</span></p>
+<ul class="list"><li>Оформляла визы по всем направлениям, вела миграционные вопросы иностранных граждан в РК, сопровождала клиентов в посольствах и визовых центрах.</li></ul>
+</div>
+<div class="job"><div class="job-top"><h3>Продавец-консультант → Старший продавец-консультант (по совместительству кассир) → Менеджер по учёту ТМЦ</h3><p class="dates">ноябрь 2011 — февраль 2015 (3 года 3 месяца)</p></div>
+<p class="company">Sauvage Group (ТОО Brand zone) <span class="note">· концептуальный люкс-ритейлер байера Лилии Рах</span> <span class="place">· г. Алматы</span></p>
+<ul class="list"><li>За 3 года 3 месяца прошла путь от продавца-консультанта до менеджера по учёту товара: три повышения подряд за стабильное выполнение показателей.</li><li>Работала с VIP-покупателями, обучала стажёров, проводила презентации брендов и мерчандайзинг в торговом зале.</li><li>Вела кассу и кассовую отчётность, контролировала кассовую дисциплину.</li><li>Отвечала за приёмку, хранение, маркировку и учёт товара, ежедневные инвентаризации и первичную документацию.</li></ul>
+</div>
+<div class="job"><h3>Ранний опыт: общепит и туризм</h3><ul class="list early"><li>2007, официантка в кафе южнокорейской кухни, 9 месяцев, г. Алматы: встреча гостей, приём заказов, обслуживание банкетов.</li><li>2008–2011, менеджер по туризму (Sun Life Travel, Four Seasons, Gulnar Tour): подбор туров, сопровождение групповых туров, работа с VIP-клиентами, привлечение новых клиентов.</li></ul></div>
+</section>
+<section><h2>Образование</h2><div class="job-top"><h3>Казахский экономический университет имени Т. Рыскулова</h3><p class="dates">2006 – 2010гг.</p></div><p class="company">Алматы, специальность «Управление, туризм»</p></section>
+<section><h2>Языки</h2><ul class="langs"><li><strong>Русский</strong> — родной</li><li><strong>Английский</strong> — Intermediate (B1), продолжает обучение до Upper-Intermediate</li></ul></section>
+<p class="dl-bottom"><a class="btn" href="files/Milchakova_Larissa_CV_RU.docx" download>Скачать Word (.docx)</a></p>
+</article>
+<article class="cv" lang="en" data-lang="en" hidden>
+<header class="head"><h1>Larissa Milchakova</h1><p class="role">Service and Tourism Manager · Team Leadership, Service Quality, P&amp;L</p>
+<p class="contacts"><a href="tel:+77472585895">+7 (747) 258-58-95</a> <span class="sep" aria-hidden="true">·</span> <a href="mailto:larissa.milchakova@gmail.com">larissa.milchakova@gmail.com</a></p>
+<p class="status">Citizen of Kazakhstan · Open to relocation</p></header>
+<section><h2>Professional profile</h2><p class="lead">13.5 years in tourism and customer service, including 6.8 years in management roles. Ran a department with an annual turnover of $510K and a team of up to 15 people in two cities, accountable to the owners for P&amp;L and budget. Took over a department in crisis and had it running smoothly within six months: client complaints fell from 3–4 a week to 1–2 per half-year, and letters of thanks grew from one a year to 1–3 a month. Beat the 2024 EBITDA target by 21%. Started out as a waitress in a café, then worked in tourism and luxury retail: VIP clients, cash register, stock control.</p></section>
+<section><h2>Key skills</h2><div class="skills">
+<div><h3>Management and finance</h3><ul class="list"><li>P&amp;L, budgeting, reporting to owners</li><li>Cost and payroll control, pricing</li><li>Service standards, procedures, job descriptions</li><li>KPIs, incentives, staff workload scheduling</li><li>Recruiting, training and retraining staff</li><li>Crisis management, launching new business lines from scratch</li></ul></div>
+<div><h3>Service and guest relations</h3><ul class="list"><li>Customer ratings of service quality, complaint handling</li><li>Difficult and conflict situations, dispute resolution</li><li>VIP and corporate clients, luxury segment</li><li>Cash handling and discipline, stock control, inventories</li><li>Working with suppliers and partners</li><li>Visa and immigration matters, including for foreign nationals</li></ul></div>
+</div></section>
+<section><h2>Work experience</h2>
+<div class="job"><div class="job-top"><h3>Head of Visa Department</h3><p class="dates">March 2023 — September 2025 (2 years 7 months)</p></div>
+<p class="company">Fun&amp;Sun (Itour LLP) / KazTour (Kaztour LLP) <span class="place">· Almaty / Astana</span></p>
+<p class="intro">Took over the visa department of tour operator Fun&amp;Sun in crisis: 15 people in Almaty and Astana, no established processes, mass complaints from partner agencies, visa refusals caused by document errors, lawsuits from clients. Worked without day-to-day involvement from senior management and reported to the owners on results, P&amp;L and budget.</p>
+<h4>Key actions</h4>
+<ul class="list"><li>Audited the department, restructured it and cut headcount from 15 to 11 with no loss of quality.</li><li>Introduced job descriptions, procedures and service standards, KPIs, incentive pay and grading where none existed; set up schedules to balance the staff workload.</li><li>Organised regular team training: complex cases, business communication, handling client objections and expectations.</li><li>Introduced customer ratings of service quality and tied them to staff KPIs; rebuilt monthly reporting on services and revenue.</li><li>Proposed, won management approval for and launched from scratch a new business line, KazTour Visa, for corporate and private clients; signed new corporate clients and built a steady flow of private clients with no additional marketing spend.</li><li>Introduced differentiated pricing and additional services.</li></ul>
+<h4>Results</h4>
+<ul class="list"><li>Within six months the department ran without disruptions and worked smoothly with other departments and clients.</li><li>Client complaints: from 3–4 a week to 1–2 per half-year. Lawsuits: zero. Formal letters of thanks: from one a year to 1–3 a month.</li><li>Service quality rating across the department: 93–98%, against a KPI threshold of 85%.</li><li>2024: EBITDA target beaten by 21% ($98.7K net profit on $510K turnover), revenue above plan, overheads 8.3% below budget.</li><li>When the tour operator’s visa market shrank and the core line’s margin fell by 31%, offset the losses with the new line: its sales grew 114% and gross margin 150% year on year. The new line’s share of the department’s margin rose from 8% to 22%, net profit stayed within 8% of plan, payroll came in 12% under plan.</li><li>Grew the new line from 1 to 4 staff by retraining the existing team, with no hiring costs.</li><li>In recognition of its cooperation with the Embassy of Greece, the department was invited two years running to EUROFEST 2024/2025 at the European Chamber of Commerce in Kazakhstan.</li></ul>
+</div>
+<div class="job"><div class="job-top"><h3>Supervisor, Visa and Immigration Department</h3><p class="dates">March 2019 — March 2023 (4 years 1 month)</p></div>
+<p class="company">International Travel Plus LLP <span class="note">(official representative of BCD Travel in Kazakhstan)</span> <span class="place">· Almaty</span></p>
+<ul class="list"><li>Managed a team of 4 and coordinated managers at regional branches; responsible for recruiting and training staff.</li><li>Prepared the budget, controlled expenses, reported to management and accounting.</li><li>Handled corporate clients including McKinsey &amp; Company, KPMG, Siemens Energy, Nestle, Mars, Danone, Sanofi, Louis Vuitton.</li><li>Worked with service suppliers, government agencies and diplomatic missions; helped resolve non-standard cases, disputes and conflicts.</li></ul>
+</div>
+<div class="job"><div class="job-top"><h3>Visa Manager → Senior Visa Manager</h3><p class="dates">July 2015 — March 2019 (3 years 9 months)</p></div>
+<p class="company">International Travel Plus LLP <span class="note">(official representative of BCD Travel in Kazakhstan)</span> <span class="place">· Almaty</span></p>
+<ul class="list"><li>Processed visas for all destinations, handled immigration matters for foreign nationals in Kazakhstan, accompanied clients to embassies and visa centres.</li></ul>
+</div>
+<div class="job"><div class="job-top"><h3>Sales Consultant → Senior Sales Consultant (also Cashier) → Inventory Manager</h3><p class="dates">November 2011 — February 2015 (3 years 3 months)</p></div>
+<p class="company">Sauvage Group (Brand Zone LLP) <span class="note">· concept luxury store of buyer Lilia Rakh</span> <span class="place">· Almaty</span></p>
+<ul class="list"><li>Rose from sales consultant to inventory manager in 3 years 3 months: three promotions in a row for consistently meeting targets.</li><li>Served VIP customers, trained interns, ran brand presentations and visual merchandising on the shop floor.</li><li>Ran the till and cash reports, enforced cash discipline.</li><li>Responsible for receiving, storing, labelling and recording goods, daily inventories and primary accounting documents.</li></ul>
+</div>
+<div class="job"><h3>Early experience: food service and tourism</h3><ul class="list early"><li>2007, waitress at a South Korean café, 9 months, Almaty: greeting guests, taking orders, serving banquets.</li><li>2008–2011, travel manager (Sun Life Travel, Four Seasons, Gulnar Tour): tailoring tours to client requests, escorting group tours, VIP clients, attracting new clients.</li></ul></div>
+</section>
+<section><h2>Education</h2><div class="job-top"><h3>Turar Ryskulov Kazakh University of Economics</h3><p class="dates">2006 – 2010</p></div><p class="company">Almaty, major: Management, Tourism</p></section>
+<section><h2>Languages</h2><ul class="langs"><li><strong>Russian</strong> — native</li><li><strong>English</strong> — Intermediate (B1), studying towards Upper-Intermediate</li></ul></section>
+<p class="dl-bottom"><a class="btn" href="files/Milchakova_Larissa_CV_EN.docx" download>Download Word (.docx)</a></p>
+</article>
+<article class="cv" lang="el" data-lang="el" hidden>
+<header class="head"><h1>Larissa Milchakova</h1><p class="role">Διευθύντρια στον τομέα εξυπηρέτησης και τουρισμού · ομάδα, ποιότητα εξυπηρέτησης, P&amp;L</p>
+<p class="contacts"><a href="tel:+77472585895">+7 (747) 258-58-95</a> <span class="sep" aria-hidden="true">·</span> <a href="mailto:larissa.milchakova@gmail.com">larissa.milchakova@gmail.com</a></p>
+<p class="status">Υπηκοότητα Καζακστάν · Διαθέσιμη για μετεγκατάσταση</p></header>
+<section><h2>Επαγγελματικό προφίλ</h2><p class="lead">13,5 χρόνια στον τουρισμό και στην εξυπηρέτηση πελατών, εκ των οποίων 6,8 σε διευθυντικές θέσεις. Διηύθυνα τμήμα με ετήσιο κύκλο εργασιών $510 χιλ. και ομάδα έως 15 ατόμων σε δύο πόλεις, με ευθύνη στους ιδιοκτήτες για το P&amp;L και τον προϋπολογισμό. Ανέλαβα τμήμα σε κρίση και σε έξι μήνες το έκανα να λειτουργεί ομαλά: τα παράπονα μειώθηκαν από 3–4 την εβδομάδα σε 1–2 ανά εξάμηνο και οι ευχαριστήριες επιστολές αυξήθηκαν από μία τον χρόνο σε 1–3 τον μήνα. Το 2024 ξεπέρασα τον στόχο EBITDA κατά 21%. Ξεκίνησα ως σερβιτόρα σε καφέ, μετά εργάστηκα στον τουρισμό και στο λιανεμπόριο πολυτελείας: VIP πελάτες, ταμείο, αποθέματα.</p></section>
+<section><h2>Βασικές δεξιότητες</h2><div class="skills">
+<div><h3>Διοίκηση και οικονομικά</h3><ul class="list"><li>P&amp;L, προϋπολογισμός, αναφορές στους ιδιοκτήτες</li><li>Έλεγχος κόστους και μισθοδοσίας, τιμολόγηση</li><li>Πρότυπα εξυπηρέτησης, διαδικασίες, καθηκοντολόγια</li><li>KPI, κίνητρα, κατανομή φόρτου εργασίας</li><li>Πρόσληψη, εκπαίδευση, επανεκπαίδευση</li><li>Διαχείριση κρίσεων, νέες δραστηριότητες από το μηδέν</li></ul></div>
+<div><h3>Εξυπηρέτηση και σχέσεις με πελάτες</h3><ul class="list"><li>Αξιολόγηση εξυπηρέτησης από πελάτες, παράπονα</li><li>Δύσκολες καταστάσεις, επίλυση διαφορών</li><li>VIP και εταιρικοί πελάτες, τομέας πολυτελείας</li><li>Ταμείο, ταμειακή πειθαρχία, αποθέματα, απογραφές</li><li>Συνεργασία με προμηθευτές και συνεργάτες</li><li>Θεωρήσεις (visa) και μετανάστευση, και για αλλοδαπούς</li></ul></div>
+</div></section>
+<section><h2>Επαγγελματική εμπειρία</h2>
+<div class="job"><div class="job-top"><h3>Επικεφαλής Τμήματος Θεωρήσεων Εισόδου (Visa)</h3><p class="dates">Μάρτιος 2023 — Σεπτέμβριος 2025 (2 έτη 7 μήνες)</p></div>
+<p class="company">Fun&amp;Sun (Itour LLP) / KazTour (Kaztour LLP) <span class="place">· Αλμάτι / Αστάνα</span></p>
+<p class="intro">Ανέλαβα το τμήμα θεωρήσεων του tour operator Fun&amp;Sun σε κατάσταση κρίσης: 15 άτομα σε Αλμάτι και Αστάνα, χωρίς οργανωμένες διαδικασίες, μαζικά παράπονα από συνεργαζόμενα πρακτορεία, απορρίψεις θεωρήσεων λόγω λαθών στα έγγραφα, δικαστικές διαφορές με πελάτες. Εργαζόμουν χωρίς καθημερινή παρέμβαση της διοίκησης και λογοδοτούσα στους ιδιοκτήτες για τα αποτελέσματα, το P&amp;L και τον προϋπολογισμό.</p>
+<h4>Κύριες ενέργειες</h4>
+<ul class="list"><li>Έκανα έλεγχο των διαδικασιών, αναδιοργάνωσα το τμήμα και μείωσα το προσωπικό από 15 σε 11 άτομα χωρίς απώλεια ποιότητας.</li><li>Εισήγαγα από το μηδέν περιγραφές θέσεων εργασίας, διαδικασίες και πρότυπα εξυπηρέτησης, KPI, σύστημα κινήτρων και βαθμίδων· καθιέρωσα προγράμματα για ισόρροπη κατανομή του φόρτου εργασίας.</li><li>Οργάνωσα τακτική εκπαίδευση της ομάδας: δύσκολες περιπτώσεις, επαγγελματική επικοινωνία, διαχείριση αντιρρήσεων και προσδοκιών των πελατών.</li><li>Καθιέρωσα την αξιολόγηση της εξυπηρέτησης από τους πελάτες και τη συνέδεσα με τα KPI των εργαζομένων· αναμόρφωσα τις μηνιαίες αναφορές για υπηρεσίες και έσοδα.</li><li>Πρότεινα, υποστήριξα ενώπιον της διοίκησης και δημιούργησα από το μηδέν νέα δραστηριότητα, την KazTour Visa, για εταιρικούς και ιδιώτες πελάτες· σύναψα συμφωνίες με νέους εταιρικούς πελάτες και δημιούργησα σταθερή ροή ιδιωτών πελατών χωρίς επιπλέον δαπάνες μάρκετινγκ.</li><li>Εισήγαγα διαφοροποιημένη τιμολόγηση και πρόσθετες υπηρεσίες.</li></ul>
+<h4>Αποτελέσματα</h4>
+<ul class="list"><li>Μέσα σε έξι μήνες το τμήμα λειτουργούσε χωρίς διακοπές και σε καλό συντονισμό με τα άλλα τμήματα και τους πελάτες.</li><li>Παράπονα πελατών: από 3–4 την εβδομάδα σε 1–2 ανά εξάμηνο. Δικαστικές διαφορές: καμία. Επίσημες ευχαριστήριες επιστολές: από μία τον χρόνο σε 1–3 τον μήνα.</li><li>Βαθμολογία ποιότητας εξυπηρέτησης του τμήματος 93–98%, με όριο KPI το 85%.</li><li>2024: ο στόχος EBITDA ξεπεράστηκε κατά 21% ($98,7 χιλ. καθαρά κέρδη με κύκλο εργασιών $510 χιλ.), έσοδα πάνω από τον στόχο, γενικά έξοδα 8,3% κάτω από τον προϋπολογισμό.</li><li>Όταν η αγορά θεωρήσεων του tour operator συρρικνώθηκε και το περιθώριο της κύριας δραστηριότητας μειώθηκε κατά 31%, αντιστάθμισα τις απώλειες με τη νέα δραστηριότητα: οι πωλήσεις της αυξήθηκαν κατά 114% και το μικτό περιθώριο κατά 150% σε ετήσια βάση. Το μερίδιο της νέας δραστηριότητας στο περιθώριο του τμήματος αυξήθηκε από 8% σε 22%, τα καθαρά κέρδη έμειναν εντός 8% από τον στόχο και η μισθοδοσία ήταν 12% κάτω από τον στόχο.</li><li>Η νέα δραστηριότητα αναπτύχθηκε από 1 σε 4 εργαζόμενους με επανεκπαίδευση της υπάρχουσας ομάδας, χωρίς κόστος προσλήψεων.</li><li>Για τη συνεργασία του με την Πρεσβεία της Ελλάδας, το τμήμα προσκλήθηκε δύο συνεχόμενα χρόνια στο EUROFEST 2024/2025 του Ευρωπαϊκού Εμπορικού Επιμελητηρίου στο Καζακστάν.</li></ul>
+</div>
+<div class="job"><div class="job-top"><h3>Επόπτρια Τμήματος Θεωρήσεων και Μετανάστευσης</h3><p class="dates">Μάρτιος 2019 — Μάρτιος 2023 (4 έτη 1 μήνας)</p></div>
+<p class="company">International Travel Plus LLP <span class="note">(επίσημος αντιπρόσωπος της BCD Travel στο Καζακστάν)</span> <span class="place">· Αλμάτι</span></p>
+<ul class="list"><li>Διηύθυνα ομάδα 4 ατόμων και συντόνιζα τους υπαλλήλους των περιφερειακών υποκαταστημάτων· ήμουν υπεύθυνη για την πρόσληψη και την εκπαίδευση του προσωπικού.</li><li>Κατάρτιζα τον προϋπολογισμό, έλεγχα τα έξοδα, ετοίμαζα αναφορές για τη διοίκηση και το λογιστήριο.</li><li>Εξυπηρετούσα εταιρικούς πελάτες, μεταξύ των οποίων McKinsey &amp; Company, KPMG, Siemens Energy, Nestle, Mars, Danone, Sanofi, Louis Vuitton.</li><li>Συνεργαζόμουν με παρόχους υπηρεσιών, κρατικές υπηρεσίες και διπλωματικές αποστολές· συμμετείχα στην επίλυση μη συνηθισμένων περιπτώσεων, διαφορών και συγκρούσεων.</li></ul>
+</div>
+<div class="job"><div class="job-top"><h3>Υπεύθυνη Θεωρήσεων → Ανώτερη Υπεύθυνη Θεωρήσεων</h3><p class="dates">Ιούλιος 2015 — Μάρτιος 2019 (3 έτη 9 μήνες)</p></div>
+<p class="company">International Travel Plus LLP <span class="note">(επίσημος αντιπρόσωπος της BCD Travel στο Καζακστάν)</span> <span class="place">· Αλμάτι</span></p>
+<ul class="list"><li>Διεκπεραίωνα θεωρήσεις για όλους τους προορισμούς, χειριζόμουν θέματα μετανάστευσης αλλοδαπών στο Καζακστάν, συνόδευα πελάτες σε πρεσβείες και κέντρα θεωρήσεων.</li></ul>
+</div>
+<div class="job"><div class="job-top"><h3>Πωλήτρια → Ανώτερη Πωλήτρια (και ταμίας) → Υπεύθυνη Διαχείρισης Αποθεμάτων</h3><p class="dates">Νοέμβριος 2011 — Φεβρουάριος 2015 (3 έτη 3 μήνες)</p></div>
+<p class="company">Sauvage Group (Brand Zone LLP) <span class="note">· concept store πολυτελείας της buyer Λίλια Ραχ</span> <span class="place">· Αλμάτι</span></p>
+<ul class="list"><li>Σε 3 χρόνια και 3 μήνες εξελίχθηκα από πωλήτρια σε υπεύθυνη διαχείρισης αποθεμάτων: τρεις διαδοχικές προαγωγές χάρη στη σταθερή επίτευξη των στόχων.</li><li>Εξυπηρετούσα VIP πελάτες, εκπαίδευα ασκούμενους, έκανα παρουσιάσεις brands και visual merchandising στον χώρο πώλησης.</li><li>Είχα την ευθύνη του ταμείου και των ταμειακών αναφορών και έλεγχα την ταμειακή πειθαρχία.</li><li>Ήμουν υπεύθυνη για την παραλαβή, αποθήκευση, σήμανση και καταγραφή των εμπορευμάτων, τις καθημερινές απογραφές και τα πρωτογενή λογιστικά έγγραφα.</li></ul>
+</div>
+<div class="job"><h3>Πρώτη εμπειρία: εστίαση και τουρισμός</h3><ul class="list early"><li>2007, σερβιτόρα σε καφέ νοτιοκορεατικής κουζίνας, 9 μήνες, Αλμάτι: υποδοχή πελατών, λήψη παραγγελιών, εξυπηρέτηση δεξιώσεων.</li><li>2008–2011, υπάλληλος τουριστικού γραφείου (Sun Life Travel, Four Seasons, Gulnar Tour): επιλογή ταξιδιών κατά τις ανάγκες του πελάτη, συνοδεία ομαδικών εκδρομών, VIP πελάτες, προσέλκυση νέων πελατών.</li></ul></div>
+</section>
+<section><h2>Εκπαίδευση</h2><div class="job-top"><h3>Οικονομικό Πανεπιστήμιο του Καζακστάν «Τουράρ Ρισκούλοφ»</h3><p class="dates">2006 – 2010</p></div><p class="company">Αλμάτι, ειδικότητα: Διοίκηση, Τουρισμός</p></section>
+<section><h2>Γλώσσες</h2><ul class="langs"><li><strong>Ρωσικά</strong> — μητρική</li><li><strong>Αγγλικά</strong> — Intermediate (B1), συνεχίζω τη μελέτη για επίπεδο Upper-Intermediate</li></ul></section>
+<p class="dl-bottom"><a class="btn" href="files/Milchakova_Larissa_CV_EL.docx" download>Λήψη Word (.docx)</a></p>
+</article>
+</main>
+<script>
+(function(){
+ var FILES={"ru": "files/Milchakova_Larissa_CV_RU.docx", "en": "files/Milchakova_Larissa_CV_EN.docx", "el": "files/Milchakova_Larissa_CV_EL.docx"}, TITLES={"ru": "Мильчакова Лариса · Резюме", "en": "Larissa Milchakova · CV", "el": "Larissa Milchakova · Βιογραφικό"}, DL={"ru": "Скачать Word", "en": "Download Word", "el": "Λήψη Word"}, codes=["ru","en","el"];
+ function pick(){
+  var q=new URLSearchParams(location.search).get("lang");
+  if(q&&codes.indexOf(q)>-1)return q;
+  var h=location.hash.replace("#","");if(codes.indexOf(h)>-1)return h;
+  try{var s=localStorage.getItem("cv-lang");if(codes.indexOf(s)>-1)return s;}catch(e){}
+  var n=(navigator.language||"en").slice(0,2).toLowerCase();
+  if(n==="ru"||n==="kk"||n==="uk"||n==="be")return "ru"; if(n==="el")return "el"; return "en";
+ }
+ function show(c,push){
+  document.querySelectorAll(".cv").forEach(function(a){a.hidden=a.dataset.lang!==c});
+  document.querySelectorAll(".langs-switch button").forEach(function(b){b.setAttribute("aria-pressed",b.dataset.lang===c?"true":"false")});
+  document.documentElement.lang=c; document.title=TITLES[c];
+  var t=document.getElementById("dl-top"); t.href=FILES[c]; t.querySelector(".long").textContent=DL[c];
+  t.setAttribute("aria-label",DL[c]+" (.docx)");
+  try{localStorage.setItem("cv-lang",c)}catch(e){}
+  if(push){var u=new URL(location.href);u.searchParams.set("lang",c);u.hash="";history.replaceState(null,"",u)}
+ }
+ document.querySelectorAll(".langs-switch button").forEach(function(b){b.addEventListener("click",function(){show(b.dataset.lang,true);window.scrollTo({top:0})})});
+ show(pick(),false);
+})();
+</script>
+</body>
+</html>
