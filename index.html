@@ -11,7 +11,7 @@
 :root{--ink:#1d2733;--muted:#5b6672;--accent:#1F3B57;--accent-2:#2f5a82;--line:#d8dee4;--bg:#f4f6f8;--paper:#fff;
 --bar-h:3.5rem;color-scheme:light}
 *{box-sizing:border-box}
-html{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;scroll-padding-block-start:var(--bar-h);-webkit-text-size-adjust:100%}
+html{overflow-anchor:none;scroll-behavior:auto;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;scroll-padding-block-start:var(--bar-h);-webkit-text-size-adjust:100%}
 body{margin:0;background:var(--bg);color:var(--ink);font:400 1rem/1.6 system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif}
 a{color:var(--accent-2);text-underline-offset:.15em;text-decoration-thickness:from-font}
 .bar{position:sticky;top:0;z-index:10;background:rgba(255,255,255,.94);backdrop-filter:saturate(1.4) blur(8px);-webkit-backdrop-filter:saturate(1.4) blur(8px);border-bottom:1px solid var(--line)}
@@ -212,7 +212,23 @@ p{margin:0}
   try{localStorage.setItem("cv-lang",c)}catch(e){}
   if(push){var u=new URL(location.href);u.searchParams.set("lang",c);u.hash="";history.replaceState(null,"",u)}
  }
- document.querySelectorAll(".langs-switch button").forEach(function(b){b.addEventListener("click",function(){show(b.dataset.lang,true);window.scrollTo({top:0})})});
+ var SEL="h1,h2,h3,h4,p,li";
+ function anchor(){
+  var cur=document.querySelector(".cv:not([hidden])"); if(!cur)return null;
+  var bar=document.querySelector(".bar").getBoundingClientRect().bottom;
+  var els=cur.querySelectorAll(SEL);
+  for(var i=0;i<els.length;i++){var r=els[i].getBoundingClientRect(); if(r.bottom>bar+1)return {i:i,top:r.top};}
+  return null;
+ }
+ document.querySelectorAll(".langs-switch button").forEach(function(b){b.addEventListener("click",function(){
+  var c=b.dataset.lang; if(document.documentElement.lang===c)return;
+  var a=window.scrollY>0?anchor():null;
+  show(c,true);
+  if(!a)return;
+  var t=document.querySelector('.cv[data-lang="'+c+'"]').querySelectorAll(SEL)[a.i];
+  function fix(){if(t)window.scrollTo({top:window.scrollY+t.getBoundingClientRect().top-a.top,behavior:"instant"});}
+  fix(); requestAnimationFrame(fix);
+ })});
  show(pick(),false);
 })();
 </script>
